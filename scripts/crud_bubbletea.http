@@ -1,0 +1,36 @@
+POST http://localhost:3000/addbubbletea.test.php
+Content-Type: application/x-www-form-urlencoded
+
+bubbletea_id=3
+&bubbletea_code=STRAWB
+&bubbletea_name=Strawberry Slush
+&bubbletea_description=A refreshing blended ice drink made with sweet strawberries and a smooth icy texture.
+&bubbletea_brand=Gong-Cha
+&bubbletea_size=Medium
+&bubbletea_sugar_level=75%
+&bubbletea_ice_level=Extra Ice
+&bubbletea_type_id=3
+&bubbletea_buy_price=2.50
+&bubbletea_sell_price=5.75
+###
+GET http://localhost:3000/listbubbleteaitems.test.php
+###
+POST http://localhost:3000/changebubbleteaitem.test.php
+Content-Type: application/x-www-form-urlencoded
+
+bubbletea_id=___
+&bubbletea_code=___
+&bubbletea_name=___
+&bubbletea_description=___
+&bubbletea_brand=___
+&bubbletea_size=___
+&bubbletea_sugar_level=___
+&bubbletea_ice_level=___
+&bubbletea_type_id=___
+&bubbletea_buy_price=___
+&bubbletea_sell_price=___
+###
+POST http://localhost:3000/removebubbleteaitem.test.php
+Content-Type: application/x-www-form-urlencoded
+
+bubbletea_id=___

@@ -1,0 +1,28 @@
+### CREATE (ADD A NEW BUBBLE TEA TYPE)
+POST http://localhost:3000/addbubbleteatype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+bubbletea_type_id=1
+&bubbletea_type_code=MT
+&bubbletea_type_name= Milk Tea
+&bubbletea_series_location=Milk Tea Series
+###
+### READ (LIST ALL TYPES)
+GET http://localhost:3000/listbubbleteatypes.test.php
+
+###
+### UPDATE (CHANGE A TYPE)
+POST http://localhost:3000/changebubbleteatype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+bubbletea_type_id=1
+&bubbletea_type_code=MT
+&bubbletea_type_name=Fruit Tea Updated
+&bubbletea_series_location=Fruit Tea Series
+
+###
+### DELETE (REMOVE A TYPE)
+POST http://localhost:3000/removebubbleteatype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+bubbletea_type_id=1

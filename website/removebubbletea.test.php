@@ -1,0 +1,24 @@
+<?php
+require_once("BubbleTeaItem.php");
+
+$bubbleteaID = $_POST['bubbleteaID'];
+
+if ((trim($bubbleteaID) == '') or (!is_numeric($bubbleteaID))) {
+
+   echo "<h2>Sorry, you must enter a valid Bubble Tea Item ID</h2>\n";
+
+} else if (!BubbleTeaItem::findBubbleTeaItem($bubbleteaID)) {
+
+   echo "<h2>Sorry, A Bubble Tea Item with ID #$bubbleteaID does not exist</h2>\n";
+
+} else {
+
+   $item = BubbleTeaItem::findBubbleTeaItem($bubbleteaID);
+   $result = $item->removeBubbleTeaItem();
+
+   if ($result)
+       echo "<h2>Bubble Tea Item $bubbleteaID removed</h2>\n";
+   else
+       echo "<h2>Sorry, problem removing Bubble Tea Item $bubbleteaID</h2>\n";
+}
+?>
