@@ -1,11 +1,12 @@
+###Name: Aliyah Panjon Course: IT 202-004 Date: 2/11/2026 Assignment: IT-202 Phase 2 - CRUD Categories and Items Email: aep@njit.edu ###
 ### CREATE (ADD A NEW BUBBLE TEA TYPE)
 POST http://localhost:3000/addbubbleteatype.test.php
 Content-Type: application/x-www-form-urlencoded
 
-bubbletea_type_id=1
-&bubbletea_type_code=MT
-&bubbletea_type_name= Milk Tea
-&bubbletea_series_location=Milk Tea Series
+bubbletea_type_id=6
+&bubbletea_type_code=CL
+&bubbletea_type_name= Classic Green Tea
+&bubbletea_series_location=Classic Tea Series
 ###
 ### READ (LIST ALL TYPES)
 GET http://localhost:3000/listbubbleteatypes.test.php
@@ -15,14 +16,14 @@ GET http://localhost:3000/listbubbleteatypes.test.php
 POST http://localhost:3000/changebubbleteatype.test.php
 Content-Type: application/x-www-form-urlencoded
 
-bubbletea_type_id=1
-&bubbletea_type_code=MT
-&bubbletea_type_name=Fruit Tea Updated
-&bubbletea_series_location=Fruit Tea Series
+bubbletea_type_id=6
+&bubbletea_type_code=MLK
+&bubbletea_type_name=Red bean milk
+&bubbletea_series_location=Milk Series
 
 ###
 ### DELETE (REMOVE A TYPE)
 POST http://localhost:3000/removebubbleteatype.test.php
 Content-Type: application/x-www-form-urlencoded
 
-bubbletea_type_id=1
+bubbletea_type_id=6

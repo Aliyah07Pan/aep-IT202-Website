@@ -1,7 +1,15 @@
 <?php
+
+/*
+Name: Aliyah Panjon
+Course: IT 202-004
+Date: 2/11/2026
+Assignment: IT-202 Phase 2 - CRUD Categories and Items
+Email: aep@njit.edu
+*/
 require_once("BubbleTeaType.php");
 
-$bubbleteaTypeID = $_POST['bubbleteaTypeID'];
+$bubbleteaTypeID = $_POST['bubbletea_type_id'];
 
 if ((trim($bubbleteaTypeID) == '') or (!is_numeric($bubbleteaTypeID))) {
 

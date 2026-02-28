@@ -1,7 +1,15 @@
-<?php
-require_once("BubbleTeaItem.php");
 
-$bubbleteaID = $_POST['bubbleteaID'];
+<?php
+/*
+Name: Aliyah Panjon
+Course: IT 202-004
+Date: 2/11/2026
+Assignment: IT-202 Phase 2 - CRUD Categories and Items
+Email: aep@njit.edu
+*/
+require_once("bubbletea.php");
+
+$bubbleteaID = $_POST['bubbletea_id'];
 
 if ((trim($bubbleteaID) == '') or (!is_numeric($bubbleteaID))) {
 
@@ -15,17 +23,17 @@ if ((trim($bubbleteaID) == '') or (!is_numeric($bubbleteaID))) {
 
    $item = BubbleTeaItem::findBubbleTeaItem($bubbleteaID);
 
-   $item->bubbletea_id = $_POST['bubbleteaID'];
-   $item->bubbletea_code = $_POST['bubbleteaCode'];
-   $item->bubbletea_name = $_POST['bubbleteaName'];
-   $item->bubbletea_description = $_POST['bubbleteaDescription'];
-   $item->bubbletea_brand = $_POST['bubbleteaBrand'];
-   $item->bubbletea_size = $_POST['bubbleteaSize'];
-   $item->bubbletea_sugar_level = $_POST['bubbleteaSugarLevel'];
-   $item->bubbletea_ice_level = $_POST['bubbleteaIceLevel'];
-   $item->bubbletea_type_id = $_POST['bubbleteaTypeID'];
-   $item->bubbletea_buy_price = $_POST['bubbleteaBuyPrice'];
-   $item->bubbletea_sell_price = $_POST['bubbleteaSellPrice'];
+   $item->bubbletea_id = $_POST['bubbletea_id'];
+   $item->bubbletea_code = $_POST['bubbletea_code'];
+   $item->bubbletea_name = $_POST['bubbletea_name'];
+   $item->bubbletea_description = $_POST['bubbletea_description'];
+   $item->bubbletea_brand = $_POST['bubbletea_brand'];
+   $item->bubbletea_size = $_POST['bubbletea_size'];
+   $item->bubbletea_sugar_level = $_POST['bubbletea_sugar_level'];
+   $item->bubbletea_ice_level = $_POST['bubbletea_ice_level'];
+   $item->bubbletea_type_id = $_POST['bubbletea_type_id'];
+   $item->bubbletea_buy_price = $_POST['bubbletea_buy_price'];
+   $item->bubbletea_sell_price = $_POST['bubbletea_sell_price'];
 
    $result = $item->updateBubbleTeaItem();
 

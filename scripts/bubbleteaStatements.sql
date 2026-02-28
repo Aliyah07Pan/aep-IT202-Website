@@ -1,4 +1,8 @@
--- Categories Table
+-- Name: Aliyah Panjon
+-- Course: IT 202-004
+-- Date: 2/11/2026
+-- Assignment: IT-202 Phase 2 - CRUD Categories and Items
+-- Email: aep@njit.edu
 CREATE TABLE bubbletea_types (
     bubbletea_type_id INT NOT NULL,
     bubbletea_type_code VARCHAR(255) NOT NULL UNIQUE,
@@ -33,3 +37,5 @@ INSERT INTO bubbletea_types
 (bubbletea_type_id, bubbletea_type_code, bubbletea_type_name, bubbletea_series_location)
 VALUES
 (5, 'CHE', 'Cheese Foam', 'Cheese Foam Series');
+
+SELECT * from bubbletea_types

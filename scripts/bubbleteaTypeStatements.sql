@@ -1,4 +1,8 @@
--- Items Table
+-- Name: Aliyah Panjon
+-- Course: IT 202-004
+-- Date: 2/11/2026
+-- Assignment: IT-202 Phase 2 - CRUD Categories and Items
+-- Email: aep@njit.edu
 CREATE TABLE bubbletea_items (
     bubbletea_id INT NOT NULL,
     bubbletea_code VARCHAR(10) NOT NULL UNIQUE,
@@ -70,3 +74,4 @@ VALUES
 (5, 'MATCHA', 'Matcha Cheese Foam Tea',
  'Premium matcha green tea topped with a creamy salted cheese foam.',
  'Gong-Cha', 'Large', '50%', 'Light Ice', 5, 3.00, 6.50);
+ SELECT * from bubbletea_types

@@ -1,4 +1,12 @@
+
 <?php
+/*
+Name: Aliyah Panjon
+Course: IT 202-004
+Date: 2/11/2026
+-- Assignment: IT-202 Phase 2 - CRUD Categories and Items
+Email: aep@njit.edu
+*/
 require_once('database.php');
 
 class BubbleTeaItem

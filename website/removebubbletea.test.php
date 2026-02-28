@@ -1,7 +1,7 @@
 <?php
-require_once("BubbleTeaItem.php");
+require_once("bubbletea.php");
 
-$bubbleteaID = $_POST['bubbleteaID'];
+$bubbleteaID = $_POST['bubbletea_id'];
 
 if ((trim($bubbleteaID) == '') or (!is_numeric($bubbleteaID))) {
 

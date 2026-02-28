@@ -1,7 +1,9 @@
+
 <?php
+
 require_once("bubbleteatype.php");
 
-$typeID = $_POST['bubbleteaTypeID'];
+$typeID = $_POST['bubbletea_type_id'];
 
 if ((trim($typeID) == '') or (!is_numeric($typeID))) {
 
@@ -13,9 +15,9 @@ if ((trim($typeID) == '') or (!is_numeric($typeID))) {
 
 } else {
 
-   $typeCode = $_POST['bubbleteaTypeCode'];
-   $typeName = $_POST['bubbleteaTypeName'];
-   $typeLocation = $_POST['bubbleteaSeriesLocation'];
+   $typeCode = $_POST['bubbletea_type_code'];
+   $typeName = $_POST['bubbletea_type_name'];
+   $typeLocation = $_POST['bubbletea_series_location'];
 
    $type = new BubbleTeaType(
         $typeID,
