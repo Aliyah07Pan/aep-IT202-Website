@@ -35,7 +35,7 @@ INSERT INTO bubbletea_items
  bubbletea_size, bubbletea_sugar_level, bubbletea_ice_level,
  bubbletea_type_id, bubbletea_buy_price, bubbletea_sell_price)
 VALUES
-(1, 'TARO', 'Taro Milk Tea',
+(1, 'MT', 'Taro Milk Tea',
  'A creamy milk black tea blended with sweet taro tropical root vegetable flavor and chewy tapioca pearls.',
  'Gong-Cha', 'Medium', '100%', 'Regular Ice', 1, 2.50, 5.50);
 

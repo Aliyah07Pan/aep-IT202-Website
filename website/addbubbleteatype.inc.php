@@ -1,9 +1,19 @@
 
 <?php
+/*
+Name: Aliyah Panjon
+Course: IT 202-004
+Date:3/12/2026
+Assignment: IT-202 Phase 3 - HTML Website Layout
+Email: aep@njit.edu
+*/
+?><?php
 
 require_once("bubbleteatype.php");
 
-$typeID = $_POST['bubbletea_type_id'];
+if (isset($_SESSION['login'])) {
+
+$typeID = $_POST['bubbleteaTypeID']; //bubbletea_type_id
 
 if ((trim($typeID) == '') or (!is_numeric($typeID))) {
 
@@ -15,9 +25,9 @@ if ((trim($typeID) == '') or (!is_numeric($typeID))) {
 
 } else {
 
-   $typeCode = $_POST['bubbletea_type_code'];
-   $typeName = $_POST['bubbletea_type_name'];
-   $typeLocation = $_POST['bubbletea_series_location'];
+   $typeCode = $_POST['bubbleteaTypeCode']; //bubbletea_type_code
+   $typeName = $_POST['bubbleteaTypeName']; //bubbletea_type_name
+   $typeLocation = $_POST['bubbleteaSeriesLocation']; //bubbletea_series_location
 
    $type = new BubbleTeaType(
         $typeID,
@@ -33,4 +43,11 @@ if ((trim($typeID) == '') or (!is_numeric($typeID))) {
    else
        echo "<h2>Sorry, there was a problem adding that Bubble Tea Type</h2>\n";
 }
+
+} else {
+
+   echo "<h2>Please log in first</h2>\n";
+
+}
+
 ?>

@@ -2,8 +2,8 @@
 /*
 Name: Aliyah Panjon
 Course: IT 202-004
-Date: 2/11/2026
-Assignment: IT-202 Phase 1 - Login and Logout
+Date: 3/12/2026
+Assignment: IT-202 Phase 3 - HTML Website Layout
 Email: aep@njit.edu
 */
 ?>
@@ -11,7 +11,7 @@ Email: aep@njit.edu
 <?php
 if (!isset($_SESSION['login'])) {
 ?>
-  <h2>Welcomeplease login to Bubble Tea Inventory Website</h2>
+  <h2>Welcome please login to Bubble Tea Inventory Website</h2>
   <br>
   <form name="login" action="index.php" method="post">
     <label>Email:</label>
@@ -26,6 +26,7 @@ if (!isset($_SESSION['login'])) {
     <input type="hidden" name="content" value="validate">
   </form>
 <?php
+
 } else {
    echo "<h2>Welcome to Bubble Tea Inventory Helper, {$_SESSION['firstName']} {$_SESSION['lastName']} ({$_SESSION['pronouns']})</h2>";
 ?>

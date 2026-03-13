@@ -7,6 +7,8 @@ Date: 2/11/2026
 Assignment: IT-202 Phase 2 - CRUD Categories and Items
 Email: aep@njit.edu
 */
+?>
+<?php
 require_once("bubbletea.php");
 
 $bubbleteaID = $_POST['bubbletea_id'];

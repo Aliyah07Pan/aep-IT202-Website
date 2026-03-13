@@ -2,36 +2,37 @@
 POST http://localhost:3000/addbubbletea.test.php
 Content-Type: application/x-www-form-urlencoded
 
-bubbletea_id=6
-&bubbletea_code=MLK
-&bubbletea_name=Coco Cream Milk
-&bubbletea_description=Fresh choclate drink with crown sugar boba
+bubbletea_id=16
+&bubbletea_code=PEACHCF
+&bubbletea_name=Peach Cheese Foam
+&bubbletea_description=Sweet peach green tea with a refreshing fruity flavor, topped with creamy cheese foam for a perfect sweet and salty combination.
+&bubbletea_size=Large
 &bubbletea_brand=Gong-Cha
-&bubbletea_size=Small
-&bubbletea_sugar_level=25%
-&bubbletea_ice_level=Hot
+&bubbletea_size=Large
+&bubbletea_sugar_level=50%
+&bubbletea_ice_level=Less ice
 &bubbletea_type_id=5
-&bubbletea_buy_price=2.50
-&bubbletea_sell_price=5.75
+&bubbletea_buy_price=3.00
+&bubbletea_sell_price=6.50
 ###
 GET http://localhost:3000/listbubbletea.test.php
 ###
 POST http://localhost:3000/changebubbletea.test.php
 Content-Type: application/x-www-form-urlencoded
 
-bubbletea_id=6
+bubbletea_id=1
 &bubbletea_code=MT
-&bubbletea_name=Coco Cream Milk Tea
-&bubbletea_description=Fresh chocolate milk tea drink with brown sugar boba
+&bubbletea_name=Taro Milk Tea
+&bubbletea_description=A creamy milk black tea blended with sweet taro tropical root vegetable flavor and chewy tapioca pearls.
 &bubbletea_brand=Gong-Cha
 &bubbletea_size=Large
 &bubbletea_sugar_level=50%
 &bubbletea_ice_level=Less ice
-&bubbletea_type_id=5
+&bubbletea_type_id=1
 &bubbletea_buy_price=2.80
 &bubbletea_sell_price=6.75
 ###
 POST http://localhost:3000/removebubbletea.test.php
 Content-Type: application/x-www-form-urlencoded
 
-bubbletea_id=___
+bubbletea_id=5
