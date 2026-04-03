@@ -15,17 +15,17 @@ Email: aep@njit.edu
 
        <tr>
            <td>Bubble Tea Type ID:</td>
-           <td><input type="text" name="bubbleteaTypeID" size="4"></td>
+           <td><input type="number" name="bubbleteaTypeID" size="4" min="1" max="99" required></td>
        </tr>
 
        <tr>
            <td>Bubble Tea Type Code:</td>
-           <td><input type="text" name="bubbleteaTypeCode" size="20"></td>
+           <td><input type="text" name="bubbleteaTypeCode" size="20" placeholder="XXX" minlength="3" required></td>
        </tr>
 
        <tr>
            <td>Bubble Tea Type Name:</td>
-           <td><input type="text" name="bubbleteaTypeName" size="20"></td>
+           <td><input type="text" name="bubbleteaTypeName" size="20" required></td>
        </tr>
 
        <tr>

@@ -13,9 +13,10 @@ require_once('bubbletea.php');
 
 if (isset($_SESSION['login'])) {
 
-$bubbleteaID = $_POST['bubbletea_id'];
+//$bubbleteaID = $_POST['bubbletea_id'];
+$bubbleteaID = filter_input(INPUT_POST, 'bubbletea_id', FILTER_VALIDATE_INT);
 
-if ((trim($bubbleteaID) == '') or (!is_numeric($bubbleteaID))) {
+if ((trim($bubbleteaID) == '') or (!is_int($bubbleteaID))) {
 
     echo "<h2>Sorry, you must enter a valid Bubble Tea Item ID number</h2>";
 

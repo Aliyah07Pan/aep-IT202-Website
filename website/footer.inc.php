@@ -10,7 +10,7 @@ Email: aep@njit.edu
 <footer>
     <p>&copy; Bubble Tea Inventory Helper - Making Inventory Management Easier</p>
 
-    <p>Aliyah Panjon | IT202-004 | Instructor: Vorah | Phase 03 | aep@njit.edu</p>
+    <p>Aliyah Panjon | IT202-004 | Instructor: Vorah | Phase 04 | aep@njit.edu</p>
 
     <p>
         <?php

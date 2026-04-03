@@ -16,12 +16,14 @@ Email: aep@njit.edu
 ?>
 
 <?php
- session_start();
+ //session_start();
 
 require_once('database.php');
 
-$emailAddress = $_POST['email_address'];
+$emailAddress = filter_var($_POST['email_address']);
 $password = $_POST['password'];
+if (filter_var($emailAddress, FILTER_VALIDATE_EMAIL)) {
+
 $query = "SELECT email_address, pronouns, first_name, last_name, phone_number 
           FROM bubbletea_users 
           WHERE email_address = ? AND password = SHA2(?,256)";
@@ -55,4 +57,8 @@ $query = "SELECT email_address, pronouns, first_name, last_name, phone_number
    echo "<h2>Sorry, login incorrect for Bubble Tea Inventory Website</h2>\n";
    echo "<a href=\"index.php\">Please try again</a>\n";
  }
+} else{
+  echo "<h2>Please eneter a valid email address </h2>/n";
+  echo '<a href="index.php">Please try again</a>';
+}
 ?>

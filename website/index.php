@@ -1,58 +1,36 @@
 <?php
-/*
-Name: Aliyah Panjon
-Course: IT 202-004
-Date: 3/12/2026
-Assignment: IT-202 Phase 3 - HTML Website Layout
-Email: aep@njit.edu
-*/
-?>
-
-<?php
 session_start();
-
-require_once("bubbleteatype.php");
+require_once("config.php");
 require_once("bubbletea.php");
+require_once("bubbleteatype.php");
 ?>
-
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Bubble Tea Inventory Helper</title>
-
-<style>
-* {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-</style>
-
+   <title>Inventory Helper</title>
+   <link rel="stylesheet" type="text/css" href="ih_styles.css">
+   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
-
 <body>
-
-<?php include("header.inc.php"); ?>
-
-<section style="height:425px;">
-
-<?php include("nav.inc.php"); ?>
-
-<main>
-
-<?php
-if (isset($_REQUEST['content'])) {
-    include($_REQUEST['content'] . ".inc.php");
-} else {
-    include("main.inc.php");
-}
-?>
-
-</main>
-
-</section>
-
-<?php include("footer.inc.php"); ?>
-
+   <header>
+       <?php include("header.inc.php"); ?>
+   </header>
+   <section style="height: 375px;">
+       <nav>
+           <?php include("nav.inc.php"); ?>
+       </nav>
+       <main>
+           <?php
+           if (isset($_REQUEST['content'])) {
+               include($_REQUEST['content'] . ".inc.php");
+           } else {
+               include("main.inc.php");
+           }
+           ?>
+       </main>
+   </section>
+   <footer>
+       <?php include("footer.inc.php"); ?>
+   </footer>
 </body>
 </html>

@@ -17,19 +17,19 @@ Email: aep@njit.edu
 
 <tr>
 <td>Item ID:</td>
-<td><input type="text" name="bubbletea_id" size="5"></td>
+<td><input type="text" name="bubbletea_id" size="5" min="1" max="99" required></td>
 </tr>
 
 <tr>
 <td>Code:</td>
-<td><input type="text" name="bubbletea_code" size="10"></td>
+<td><input type="text" name="bubbletea_code" size="20" placeholder="XXX" minlength="3" required></td>
 </tr>
 
 <tr>
 <td>Name:</td>
-<td><input type="text" name="bubbletea_name" size="25"></td>
+<td><input type="text" name="bubbletea_name" size="25" required></td>
 </tr>
-
+//
 <tr>
 <td>Description:</td>
 <td><input type="text" name="bubbletea_description" size="40"></td>

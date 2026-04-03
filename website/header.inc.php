@@ -14,7 +14,36 @@ Email: aep@njit.edu
 </head>
 <body>
 
-<header>
-    <h1>Bubble Tea Collection</h1>
-    <h2>Bubble Tea Management System</h2>
-</header>
+<style>
+     .header-div {
+        display: flex;
+        align-items: center;
+}
+  .header-div {
+       background-color: #8b9fd4;
+       padding: 8px 12px;
+       display: flex;
+       align-items: center;
+       border-bottom: 1px solid #a8b8e0;
+  }
+  .header-div img {
+      width: 35px;
+      height: 35px;
+      margin-right: 5px;
+  }
+  .header-div h1,
+  .header-div h2 {
+      color: white;
+      margin: 0;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+  }
+</style>
+
+<div class="header-div">
+  <img src="images/logo.png" alt="Boba Shop Logo">
+  <div>
+      <h1>Boba Collection</h1>
+      <h2>Inventory Management</h2>
+  </div>
+</div>
