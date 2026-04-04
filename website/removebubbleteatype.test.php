@@ -10,7 +10,7 @@ Email: aep@njit.edu
 /*
 Name: Aliyah Panjon
 Course: IT 202-004
-Date: 3/12/2026
+Date: 4/03/2026
 Assignment: IT-202 Phase 3 - HTML Website Layout
 Email: aep@njit.edu
 */

@@ -1,3 +1,4 @@
+
 <?php
 ini_set('display_errors', 0); // Disable error display
 ini_set('log_errors', 1); // Enable error logging

@@ -1,3 +1,4 @@
+
 <?php
 if (isset($_SESSION['login'])) {
 ?>
@@ -52,9 +53,9 @@ if (isset($_SESSION['login'])) {
         <td>
           <form action="index.php" method="post">
             <label>Search for Item:</label><br>
-            <input type="text" name="itemID" size="14" />
+            <input type="text" name="bubbletea_id" size="14" />
             <input type="submit" value="find" />
-            <input type="hidden" name="content" value="updateitem" />
+            <input type="hidden" name="content" value="updatebubbletea" />
           </form>
         </td>
       </tr>
@@ -62,9 +63,9 @@ if (isset($_SESSION['login'])) {
         <td>
           <form action="index.php" method="post">
             <label>Search for Category:</label><br>
-            <input type="text" name="categoryID" size="14" />
+            <input type="text" name="bubbletea_type_id" size="14" />
             <input type="submit" value="find" />
-            <input type="hidden" name="content" value="displaycategory" />
+            <input type="hidden" name="content" value="displaybubbleteatype" />
           </form>
         </td>
       </tr>
