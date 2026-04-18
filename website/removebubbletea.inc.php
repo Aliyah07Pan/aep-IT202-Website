@@ -1,21 +1,13 @@
-<?php
 /*
 Name: Aliyah Panjon
 Course: IT 202-004
-Date: 3/12/2026
-Assignment: IT-202 Phase 3 - HTML Website Layout
+Date: 04/18/2026
+-- Assignment: IT-202 Phase 05 - JavaScript 
 Email: aep@njit.edu
 */
-/*
-Name: Aliyah Panjon
-Course: IT 202-004
-Date: 4/03/2026
-Assignment: IT-202 Phase 4 - Input Filtering and CSS Styling
-Email: aep@njit.edu
-*/
-?>
 <?php
 require_once("bubbletea.php");
+if (isset($_SESSION[ 'login'])) {
 
 $bubbleteaID = $_POST['bubbletea_id'];
 
@@ -36,5 +28,8 @@ if ((trim($bubbleteaID) == '') or (!is_numeric($bubbleteaID))) {
        echo "<h2>Bubble Tea Item $bubbleteaID removed</h2>\n";
    else
        echo "<h2>Sorry, problem removing Bubble Tea Item $bubbleteaID</h2>\n";
+}
+} else {
+   echo "<h2>Please login first</h2>\n";
 }
 ?>

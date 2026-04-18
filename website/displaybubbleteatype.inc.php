@@ -1,12 +1,10 @@
-<?php
 /*
 Name: Aliyah Panjon
 Course: IT 202-004
-Date: 3/12/2026
-Assignment: IT-202 Phase 3 - HTML Website Layout
+Date: 04/18/2026
+-- Assignment: IT-202 Phase 05 - JavaScript 
 Email: aep@njit.edu
 */
-?>
 <?php
 require_once("bubbleteatype.php");
 require_once("bubbletea.php");

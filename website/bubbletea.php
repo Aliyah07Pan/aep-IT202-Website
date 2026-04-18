@@ -3,8 +3,8 @@
 /*
 Name: Aliyah Panjon
 Course: IT 202-004
-Date: 2/11/2026
--- Assignment: IT-202 Phase 2 - CRUD Categories and Items
+Date: 04/18/2026
+-- Assignment: IT-202 Phase 05 - JavaScript 
 Email: aep@njit.edu
 */
 require_once('database.php');
@@ -171,5 +171,47 @@ class BubbleTeaItem
         $db->close();
         return $result;
     }
+   static function getTotalItems()
+{
+    $db = getDB();
+    $query = "SELECT COUNT(bubbletea_id) FROM bubbletea_items";
+    $result = $db->query($query);
+    $row = $result->fetch_array();
+    $db->close();
+    if ($row) {
+        return $row[0];
+    } else {
+        return NULL;
+    }
 }
+
+static function getTotalListPrice()
+{
+    $db = getDB();
+    $query = "SELECT SUM(bubbletea_buy_price) FROM bubbletea_items";
+    $result = $db->query($query);
+    $row = $result->fetch_array();
+    $db->close();
+    if ($row) {
+        return $row[0];
+    } else {
+        return NULL;
+    }
+}
+static function getTotalSellPrice()
+{
+    $db = getDB();
+    $query = "SELECT SUM(bubbletea_sell_price) FROM bubbletea_items";
+    $result = $db->query($query);
+    $row = $result->fetch_array();
+    $db->close();
+    if ($row) {
+        return $row[0];
+    } else {
+        return NULL;
+    }
+}
+
+}
+
 ?>

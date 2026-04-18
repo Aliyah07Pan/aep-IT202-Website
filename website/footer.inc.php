@@ -2,15 +2,15 @@
 /*
 Name: Aliyah Panjon
 Course: IT 202-004
-Date: 3/12/2026
-Assignment: IT-202 Phase 3 - HTML Website Layout
+Date: 04/18/2026
+-- Assignment: IT-202 Phase 05 - JavaScript 
 Email: aep@njit.edu
 */
 ?>
 <footer>
     <p>&copy; Bubble Tea Inventory Helper - Making Inventory Management Easier</p>
 
-    <p>Aliyah Panjon | IT202-004 | Instructor: Vorah | Phase 04 | aep@njit.edu</p>
+    <p>Aliyah Panjon | IT202-004 | Instructor: Vorah | Phase 05 | aep@njit.edu</p>
 
     <p>
         <?php
